@@ -29,9 +29,9 @@ const defaultFontSize = 16;
 const phoneRegex = new RegExp(/^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/);
 
 const LeadCaptureSchema = z.object({
-  name: z.string().min(2, 'Name is too short').optional(),
-  email: z.string().email('Please provide a valid email').optional(),
-  phone: z.string().min(5, 'Phone number is too short').regex(phoneRegex, 'Invalid Number!').optional(),
+  name: z.string().min(2, 'الاسم قصير جدا').optional(),
+  email: z.string().email('يرجى تقديم بريد إلكتروني صالح').optional(),
+  phone: z.string().min(5, 'رقم الهاتف قصير جدًا').regex(phoneRegex, 'رقم غير صالح!').optional(),
 });
 
 export const LeadCaptureBubble = (props: Props) => {
