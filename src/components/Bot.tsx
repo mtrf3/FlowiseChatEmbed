@@ -143,7 +143,7 @@ export type LeadsConfig = {
   successMessage?: string;
 };
 
-const defaultWelcomeMessage = 'مرحبا 👋 كيف ممكن أساعدك';
+const defaultWelcomeMessage = 'Hello 👋 How Can I Help?';
 
 /*const sourceDocuments = [
     {

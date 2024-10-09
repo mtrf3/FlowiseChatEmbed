@@ -48,7 +48,7 @@ export const Badge = (props: Props) => {
             'background-color': props.badgeBackgroundColor ?? '#ffffff',
           }}
         >
-          {props.footer?.text ?? 'مشغل بواسطة'}
+          {props.footer?.text ?? 'Powered By'}
           <a
             ref={liteBadge}
             href={props.footer?.companyLink ?? 'https://sitesway.sa'}
